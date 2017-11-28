@@ -1,0 +1,10 @@
+DOUT = XOR3(A,B,C) {
+	nA=I1 INV(A)
+	nB=I2 INV(B)
+	nC=I3 INV(C)
+	t1=I4 AND(nA,nB,C)
+	t2=I5 AND(nA,B,nC)
+	t3=I6 AND(A,nB,nC)
+	t4=I7 AND(A,B,C)
+	DOUT=I8 OR(t1,t2,t3,t4)
+}

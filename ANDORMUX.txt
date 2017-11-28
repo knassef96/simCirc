@@ -1,0 +1,6 @@
+DOUT=ANDORMUX(D0,D1,SEL) {
+	notsel=I1 INV(SEL)
+	seld0=I2 AND(D0,notsel)
+	seld1=I3 AND(D1,SEL)
+	DOUT=I4 OR(seld0,seld1)
+}
