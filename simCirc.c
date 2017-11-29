@@ -162,6 +162,6 @@ int main(int argc, char *argv[]){
 		}
 		
 	}
-	//free(outVals);
+	free(outVals);
 	return 0;
 }
