@@ -105,7 +105,7 @@ int *evaluate(struct circuit mainCirc, int inputArray[]) {
 	}
 	
 	return outVals;
-	free(outVals);
+	
 }
 
 int main(int argc, char *argv[]){
