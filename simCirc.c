@@ -69,7 +69,7 @@ char getSource(struct net current, int i, int *inputVals, int *outVals) {
 }
 
 int *evaluate(struct circuit mainCirc, int inputArray[]) {
-	int *outVals = (int *)malloc(mainCirc.numOutputs); // hold the output of the gate instances
+	int *outVals = malloc(mainCirc.numOutputs); // hold the output of the gate instances
 	int w = 0;
 	for(;w<100;w++) {
 		outVals[w]=0;
@@ -162,6 +162,6 @@ int main(int argc, char *argv[]){
 		}
 		
 	}
-	free(outVals);
+	free(*outVals);
 	return 0;
 }
