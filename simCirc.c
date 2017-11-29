@@ -70,7 +70,7 @@ char getSource(struct net current, int i, int *inputVals, int *outVals) {
 
 int *evaluate(struct circuit mainCirc, int inputArray[]) {
 	int *outVals;
-	outVals = malloc(cnt* sizeof *p); // hold the output of the gate instances
+	outVals = malloc(cnt* sizeof *outVals); // hold the output of the gate instances
 	int w = 0;
 	for(;w<100;w++) {
 		outVals[w]=0;
