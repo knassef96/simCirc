@@ -103,7 +103,9 @@ int *evaluate(struct circuit mainCirc, int inputArray[]) {
 			outVals[i] = subOuts[subCirc.numInstances - 1];
 		}
 	}
+	
 	return outVals;
+	free(outVals);
 }
 
 int main(int argc, char *argv[]){
@@ -163,6 +165,6 @@ int main(int argc, char *argv[]){
 		}
 		
 	}
-	free(outVals);
+	
 	return 0;
 }
